@@ -1,0 +1,48 @@
+﻿<Window x:Class="Colors2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Colors2"
+        mc:Ignorable="d"
+         Title="MainWindow" Height="450" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Content="Последние документы" Height="40"/>
+            <StackPanel> 
+                <Label Content="1.txt"/>
+                <Label Content="2.txt"/>
+                <Label Content="3.txt"/>
+                <Label Content="4.txt"/>
+                <Label Content="5.txt"/>
+                <Label Content="6.txt"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <StackPanel Orientation="Horizontal" Height="40">
+                <Button Content="Открыть" Width="80" Margin="5"/>
+                <Button Content="Сохранить" Width="80" Margin="5"/>
+                <Button Content="Обработать" Width="80" Margin="5"/>
+                <Button Content="Закрыть" Width="80" Margin="5"/>
+                <Button Content="О программе" Width="80" Margin="5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Height="40">
+                <Label Content=".txt 1"/>
+                <Label Content=".txt 2"/>
+                <Label Content=".txt 3"/>
+            </StackPanel>
+            <WrapPanel>
+                <Button Content="A" Background="Blue" Width="120" Height="120" Margin="5"/>
+                <Button Content="B" Background="Yellow" Width="120" Height="120" Margin="5"/>
+                <Button Content="C" Background="Green" Width="120" Height="120" Margin="5"/>
+                <Button Content="D" Background="Red" Width="120" Height="120" Margin="5"/>
+                <Button Content="E" Background="MediumOrchid" Width="120" Height="120" Margin="5"/>
+                <Button Content="F" Background="Cyan" Width="120" Height="120" Margin="5"/>
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
